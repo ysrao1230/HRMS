@@ -5,7 +5,7 @@ public interface ConstantValues {
 	String FIREFOX_KEY = "webdriver.gecko.driver";
 	String CHROME_PATH = "C:/Automation/chromedriver_win32/chromedriver.exe";
 	String FIREFOX_PATH = "C:/Automation/geckodriver.exe";
-	String LOGIN_EXCEL = "";
+	String LOGIN_EXCEL = "C:/Users/ycs/Desktop/LoginData.xlsx";
 	String FORMS_DATA = "";
-	String PROP_PATH = "C:\\Users\\ycs\\eclipse-workspace\\HRMS\\ConfigFiles\\ApplicationConfig.properties";
+	String PROP_PATH = "C:/Users/ycs/eclipse-workspace/onpassiveOstaff/ConfigFiles/ApplicationConfig.properties";
 }

@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>HRMS</groupId>
-	<artifactId>HRMS</artifactId>
+	<groupId>onpassiveOstaff</groupId>
+	<artifactId>onpassiveOstaff</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>HRMS</name>
+	<name>onpassiveOstaff</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -91,11 +91,16 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.14.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>4.1.2</version>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.15</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.0.0</version>
+		</dependency>
 	</dependencies>
 </project>

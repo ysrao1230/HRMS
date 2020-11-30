@@ -2,12 +2,13 @@ package com.onpassiveOstaff.BasePages;
 
 import java.io.IOException;
 
-public class B {
+import com.onpassiveOstaff.Utility.FileLibrary;
 
-	public static void main(String[] args) throws IOException {
-		Configurationfileread con = new Configurationfileread();
-		System.out.println(con.fileread("url"));
+public class B extends Basepage {
 
+	public static void main(String[] args) throws Exception {
+		FileLibrary fl = new FileLibrary();
+		System.out.println(fl.getPropKeyvalue(PROP_PATH, "url"));
 	}
 
 }

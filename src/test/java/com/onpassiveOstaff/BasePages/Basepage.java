@@ -10,6 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.onpassiveOstaff.Pages.HomePage;
+import com.onpassiveOstaff.Utility.CommonLibrary;
 import com.onpassiveOstaff.Utility.FileLibrary;
 
 import Log4j.Log4jdemo;
@@ -20,6 +21,7 @@ public class Basepage implements ConstantValues {
 	protected HomePage hm;
 	protected static FileLibrary fl = new FileLibrary();
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
+	protected CommonLibrary cl;
 
 	@BeforeTest
 	public void launchingbrowser() throws Exception {
@@ -41,6 +43,8 @@ public class Basepage implements ConstantValues {
 		driver.manage().deleteAllCookies();
 		driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
 		hm = new HomePage(driver);
+		cl = new CommonLibrary();
+		
 
 	}
 

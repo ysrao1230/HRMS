@@ -21,12 +21,14 @@ public class LoginTestcase extends Basepage {
 		logger.info("page loading info");
 		login = new LoginPage(driver);
 		logger.info("Trying to login to the application without any errors");
-		login.uname(fl.getPropKeyvalue(PROP_PATH, "username"));
-		login.pasword(fl.getPropKeyvalue(PROP_PATH, "password"));
+		String uname = fl.getCellData(LOGIN_EXCEL,"Sheet1", 1, 0);
+		login.uname(uname);
+		String pwd = fl.getCellData(LOGIN_EXCEL,"Sheet1", 1, 1);
+		login.pasword(pwd);
 		Thread.sleep(4000);
 		login.showpsd();
 		login.login();
-		String str = driver.getTitle();
+		String str = cl.getPageTitle();
 		System.out.println("Current Page title is: " + str);
 		assertEquals("OnPassive HRMS", str);
 		logger.info("Logged in to allpication successfully");
@@ -45,8 +47,8 @@ public class LoginTestcase extends Basepage {
 		Thread.sleep(3000);
 		logger.info("Clicking dashboard option");
 	}
-	
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void HroperationsTimeschedule() throws InterruptedException {
 		hm.Hroperationaction();
 		logger.info("Performing the HR operations");

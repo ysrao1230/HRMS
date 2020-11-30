@@ -25,10 +25,12 @@ public class FileLibrary {
 		return rowCount;
 	}
 	
-	public static String getCellData(String path,String sheet,int row,int cell) throws Exception {
+	public String getCellData(String path,String sheet,int row,int cell) throws Exception {
 		FileInputStream fis = new FileInputStream(path);
 		Workbook wb = WorkbookFactory.create(fis);
+		System.out.println("Excel Data" +wb);
 		String excelValue = wb.getSheet(sheet).getRow(row).getCell(cell).toString();
+		
 		return excelValue;
 	}
 	
