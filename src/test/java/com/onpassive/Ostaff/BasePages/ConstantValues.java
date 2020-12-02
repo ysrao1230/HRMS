@@ -1,4 +1,4 @@
-package com.onpassiveOstaff.BasePages;
+package com.onpassive.Ostaff.BasePages;
 
 public interface ConstantValues {
 	String CHROME_KEY = "webdriver.chrome.driver";

@@ -1,8 +1,8 @@
-package com.onpassiveOstaff.BasePages;
+package com.onpassive.Ostaff.BasePages;
 
 import java.io.IOException;
 
-import com.onpassiveOstaff.Utility.FileLibrary;
+import com.onpassive.Ostaff.Utility.FileLibrary;
 
 public class B extends Basepage {
 

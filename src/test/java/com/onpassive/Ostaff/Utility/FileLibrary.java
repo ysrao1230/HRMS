@@ -1,4 +1,4 @@
-package com.onpassiveOstaff.Utility;
+package com.onpassive.Ostaff.Utility;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -1,4 +1,4 @@
-package com.onpassiveOstaff.Utility;
+package com.onpassive.Ostaff.Utility;
 
 import java.io.File;
 import java.text.DateFormat;
@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-import com.onpassiveOstaff.BasePages.Basepage;
+import com.onpassive.Ostaff.BasePages.Basepage;
 
 public class CommonLibrary extends Basepage {
 	public void waitForElementVisibility(By locator) {
@@ -40,7 +40,8 @@ public class CommonLibrary extends Basepage {
 	public void scrollPage(WebElement element) throws Exception {
 		Point pt = element.getLocation();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy" + pt);
+        js.executeScript("window.scrollBy(0,1000)");
+		//js.executeScript("window.scrollBy" + pt);
 		Thread.sleep(2000);
 	}
 

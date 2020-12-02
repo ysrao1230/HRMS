@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
-      <class name="com.onpassiveOstaff.TestCases.LoginTestcase">
+      <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
+        <methods>
+          <include name="hrOperationCompany"/>
+          <include name="logout"/>
+          <include name="HroperationsTimeschedule"/>
+          <include name="dashboardOperations"/>
+          <include name="hrOperationLocation"/>
+          <include name="logintoApplication"/>
+        </methods>
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
+      <class name="com.onpassive.Ostaff.BasePages.Basepage">
         <methods>
           <include name="tearDown"/>
           <include name="launchingbrowser"/>
-          <include name="dashboardOperations"/>
-          <include name="HroperationsTimeschedule"/>
-          <include name="logout"/>
-          <include name="testcase1"/>
         </methods>
-      </class> <!-- com.onpassiveOstaff.TestCases.LoginTestcase -->
+      </class> <!-- com.onpassive.Ostaff.BasePages.Basepage -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.onpassiveOstaff.TestCases.LoginTestcase">
+      <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
+          <include name="hrOperationCompany"/>
           <include name="tearDown"/>
           <include name="launchingbrowser"/>
-          <include name="dashboardOperations"/>
-          <include name="HroperationsTimeschedule"/>
-          <include name="logout"/>
-          <include name="testcase1"/>
         </methods>
-      </class> <!-- com.onpassiveOstaff.TestCases.LoginTestcase -->
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

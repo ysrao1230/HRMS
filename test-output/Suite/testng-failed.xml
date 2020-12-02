@@ -3,13 +3,22 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="TestCases.LoginTestcase">
+      <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
+        <methods>
+          <include name="hrOperationCompany"/>
+          <include name="logout"/>
+          <include name="HroperationsTimeschedule"/>
+          <include name="dashboardOperations"/>
+          <include name="hrOperationLocation"/>
+          <include name="logintoApplication"/>
+        </methods>
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
+      <class name="com.onpassive.Ostaff.BasePages.Basepage">
         <methods>
           <include name="tearDown"/>
-          <include name="HroperationsTimeschedule"/>
           <include name="launchingbrowser"/>
         </methods>
-      </class> <!-- TestCases.LoginTestcase -->
+      </class> <!-- com.onpassive.Ostaff.BasePages.Basepage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,4 +1,4 @@
-package com.onpassiveOstaff.BasePages;
+package com.onpassive.Ostaff.BasePages;
 
 import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
@@ -9,9 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import com.onpassiveOstaff.Pages.HomePage;
-import com.onpassiveOstaff.Utility.CommonLibrary;
-import com.onpassiveOstaff.Utility.FileLibrary;
+import com.onpassive.Ostaff.Pages.HomePage;
+import com.onpassive.Ostaff.Utility.CommonLibrary;
+import com.onpassive.Ostaff.Utility.FileLibrary;
 
 import Log4j.Log4jdemo;
 
@@ -22,6 +22,7 @@ public class Basepage implements ConstantValues {
 	protected static FileLibrary fl = new FileLibrary();
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
 	protected CommonLibrary cl;
+	
 
 	@BeforeTest
 	public void launchingbrowser() throws Exception {
@@ -39,7 +40,7 @@ public class Basepage implements ConstantValues {
 
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
 		hm = new HomePage(driver);
@@ -50,7 +51,7 @@ public class Basepage implements ConstantValues {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		driver.close();
 		logger.info("Closed the browser");
 	}

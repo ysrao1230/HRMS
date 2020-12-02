@@ -1,4 +1,4 @@
-package com.onpassiveOstaff.Pages;
+package com.onpassive.Ostaff.Pages;
 
 import java.util.concurrent.TimeUnit;
 
