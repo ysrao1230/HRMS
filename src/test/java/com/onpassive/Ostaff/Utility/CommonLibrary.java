@@ -81,7 +81,7 @@ public class CommonLibrary extends Basepage {
 		Reporter.log(elementName + "is Displayed -->>", true);
 	}
 
-	public static String captureScreenShots() {
+	public  String captureScreenShots() {
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String screenshot = System.getProperty("user.dir") + "/Screenshots/Webinair_" + getCurrentDateTime() + ".png";
 		try {
@@ -94,26 +94,22 @@ public class CommonLibrary extends Basepage {
 		return screenshot;
 	}
 
-	public static String getCurrentDateTime() {
-		DateFormat customformat = new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss");
+	public  String getCurrentDateTime() {
+		DateFormat customformat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 		Date cdate = new Date();
 		return customformat.format(cdate);
 	}
 
 	public WebElement sidebarscrolling(WebElement elem) throws Exception {
-		// Create instance of Javascript executor
 		JavascriptExecutor je = (JavascriptExecutor) driver;
-		// now execute query which actually will scroll until that element is not
-		// appeared on page.
 		je.executeScript("arguments[0].scrollIntoView(true);", elem);
-		// Extract the text and verify
-		System.out.println(elem.getText());
 		return elem;
 	}
 	
-	public WebElement clickAction(WebElement element) {
+	public WebElement clickAction(WebElement element) throws InterruptedException {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click().perform();
+		Thread.sleep(2000);
 		return element;
 		
 	}

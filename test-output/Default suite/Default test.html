@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 03 15:06:33 IST 2020</td>
+<td>Started on:</td><td>Thu Dec 03 18:04:26 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21220 ms)</td>
+<tr><td>Total time:</td><td>113 seconds (113626 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationAsset()'><b>hrOperationAsset</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.logout()'><b>logout</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-noa-c47=&quot;&quot; href=&quot;javascript:;&quot; mat-menu-item=&quot;&quot; class=&quot;mat-focus-indicator user-logout-menu mat-menu-item ng-tns-c45-2&quot; role=&quot;menuitem&quot; tabindex=&quot;0&quot; aria-disabled=&quot;false&quot;&gt;...&lt;/a&gt; is not clickable at point (1257, 94). Other element would receive the click: &lt;div id=&quot;cdk-overlay-15&quot; class=&quot;cdk-overlay-pane&quot; style=&quot;pointer-events: auto; position: static;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
 System info: host: &apos;DESKTOP-A5OTGBU&apos;, ip: &apos;192.168.12.34&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 32caf106980a4e968eb82d580d9884aa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b57f5dd8dcba8adc79096885ed4777af
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -94,12 +94,16 @@ Session ID: 32caf106980a4e968eb82d580d9884aa
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
-	at com.onpassive.Ostaff.Utility.CommonLibrary.clickAction(CommonLibrary.java:116)
-	at com.onpassive.Ostaff.Pages.HomePage.SelectAssets(HomePage.java:169)
-	at com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationAsset(LoginTestcase.java:81)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy26.click(Unknown Source)
+	at com.onpassive.Ostaff.Pages.HomePage.logoutoption(HomePage.java:99)
+	at com.onpassive.Ostaff.TestCases.LoginTestcase.logout(LoginTestcase.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,14 +132,14 @@ Session ID: 32caf106980a4e968eb82d580d9884aa
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1254907391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1254907391'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+</pre></div><a href='#' onClick='toggleBox("stack-trace1565096593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1565096593'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-noa-c47=&quot;&quot; href=&quot;javascript:;&quot; mat-menu-item=&quot;&quot; class=&quot;mat-focus-indicator user-logout-menu mat-menu-item ng-tns-c45-2&quot; role=&quot;menuitem&quot; tabindex=&quot;0&quot; aria-disabled=&quot;false&quot;&gt;...&lt;/a&gt; is not clickable at point (1257, 94). Other element would receive the click: &lt;div id=&quot;cdk-overlay-15&quot; class=&quot;cdk-overlay-pane&quot; style=&quot;pointer-events: auto; position: static;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
 System info: host: &apos;DESKTOP-A5OTGBU&apos;, ip: &apos;192.168.12.34&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 32caf106980a4e968eb82d580d9884aa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b57f5dd8dcba8adc79096885ed4777af
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -147,12 +151,16 @@ Session ID: 32caf106980a4e968eb82d580d9884aa
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
-	at com.onpassive.Ostaff.Utility.CommonLibrary.clickAction(CommonLibrary.java:116)
-	at com.onpassive.Ostaff.Pages.HomePage.SelectAssets(HomePage.java:169)
-	at com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationAsset(LoginTestcase.java:81)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy26.click(Unknown Source)
+	at com.onpassive.Ostaff.Pages.HomePage.logoutoption(HomePage.java:99)
+	at com.onpassive.Ostaff.TestCases.LoginTestcase.logout(LoginTestcase.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,8 +190,8 @@ Session ID: 32caf106980a4e968eb82d580d9884aa
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@12bfd80d</td></tr>
+<td>4</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -195,33 +203,78 @@ Session ID: 32caf106980a4e968eb82d580d9884aa
 <tr>
 <td title='com.onpassive.Ostaff.TestCases.LoginTestcase.HroperationsTimeschedule()'><b>HroperationsTimeschedule</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
 <td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@12bfd80d</td></tr>
+<td>6</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
 <tr>
 <td title='com.onpassive.Ostaff.TestCases.LoginTestcase.dashboardOperations()'><b>dashboardOperations</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
 <td></td>
-<td>1</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@12bfd80d</td></tr>
+<td>2</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationAsset()'><b>hrOperationAsset</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>12</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
 <tr>
 <td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationCompany()'><b>hrOperationCompany</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
 <td></td>
-<td>1</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@12bfd80d</td></tr>
+<td>2</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationDepartment()'><b>hrOperationDepartment</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>2</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationDesignation()'><b>hrOperationDesignation</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>2</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationHolidaysList()'><b>hrOperationHolidaysList</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>12</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationLeavePlan()'><b>hrOperationLeavePlan</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>2</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
 <tr>
 <td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationLocation()'><b>hrOperationLocation</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
 <td></td>
-<td>1</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@12bfd80d</td></tr>
+<td>2</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationProject()'><b>hrOperationProject</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>12</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationSkils()'><b>hrOperationSkils</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>12</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationjobs()'><b>hrOperationjobs</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>12</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationnotification()'><b>hrOperationnotification</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>2</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
+<tr>
+<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationpolicy()'><b>hrOperationpolicy</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
+<td></td>
+<td>12</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
 <tr>
 <td title='com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication()'><b>logintoApplication</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
 <td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@12bfd80d</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.logout()'><b>logout</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
 <td>3</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@12bfd80d</td></tr>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@285c08c8</td></tr>
 </table><p>
 </body>
 </html>

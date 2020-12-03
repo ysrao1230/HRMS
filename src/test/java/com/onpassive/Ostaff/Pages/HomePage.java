@@ -108,11 +108,13 @@ public class HomePage extends Basepage {
 		action.moveToElement(hroperation).perform();
 	}
 
-	public void Hroperationaction() {
+	public void Hroperationaction() throws Exception {
+		cli.sidebarscrolling(hroperation);
 		cli.clickAction(hroperation);
 	}
 
-	public void TimeSchedule()  {
+	public void TimeSchedule() throws Exception  {
+		cli.sidebarscrolling(TimeSchedule);
 		cli.clickAction(TimeSchedule);
 	}
 
@@ -121,51 +123,63 @@ public class HomePage extends Basepage {
 		// addingTimeschedule.click();
 	}
 
-	public void selectLocation() {
+	public void selectLocation() throws Exception {
+		cli.sidebarscrolling(Location);
 		cli.clickAction(Location);
 	}
 
-	public void SelectCompany() {
+	public void SelectCompany() throws Exception {
+		cli.sidebarscrolling(Company);
 		cli.clickAction(Company);
 	}
 
-	public void SelectDepartment()  {
+	public void SelectDepartment() throws Exception  {
+		cli.sidebarscrolling(Department);
 		cli.clickAction(Department);
 	}
 
-	public void SelectDesignation() {
+	public void SelectDesignation() throws Exception {
+		cli.sidebarscrolling(Designation);
 		cli.clickAction(Designation);
 	}
 
-	public void SelectLeaveplan() {
+	public void SelectLeaveplan() throws Exception {
+		cli.sidebarscrolling(LeavePlan);
 		cli.clickAction(LeavePlan);
 	}
 
-	public void SelectNotfication()  {
+	public void SelectNotfication() throws Exception  {
+		cli.sidebarscrolling(Notification);
 		cli.clickAction(Notification);
 	}
 
-	public void SelectProject()  {
+	public void SelectProject() throws Exception  {
+		cli.sidebarscrolling(Project);
 		cli.clickAction(Project);
 	}
 
-	public void SelectHolidays()  {
+	public void SelectHolidays() throws Exception  {
+		cli.sidebarscrolling(Holidayslist);
 		cli.clickAction(Holidayslist);
 	}
 
-	public void SelectJobs(){
+	public void SelectJobs() throws Exception{
+		cli.sidebarscrolling(jobs);
 		cli.clickAction(jobs);
 	}
 
-	public void SelectSkills()  {
+	public void SelectSkills() throws Exception  {
+		cli.sidebarscrolling(skills);
 		cli.clickAction(skills);
 	}
 
-	public void SelectPolicy()  {
+	public void SelectPolicy() throws Exception  {
+		cli.sidebarscrolling(policy);
 		cli.clickAction(policy);
 	}
 
-	public void SelectAssets() {
+	public void SelectAssets() throws Exception {
+		cli.sidebarscrolling(Assets);
 		cli.clickAction(Assets);
 	}
 

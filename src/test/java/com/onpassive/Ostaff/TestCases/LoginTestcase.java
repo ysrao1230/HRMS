@@ -16,7 +16,7 @@ public class LoginTestcase extends Basepage {
 	LoginPage login;
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
 
-	@Test(priority = 0)
+	@Test(priority = 0, groups = {"smoke"})
 	public void logintoApplication() throws Exception {
 		logger.info("page loading info");
 		login = new LoginPage(driver);
@@ -25,8 +25,9 @@ public class LoginTestcase extends Basepage {
 		login.uname(uname);
 		String pwd = fl.getCellData(LOGIN_EXCEL, "Sheet1", 0, 1);
 		login.pasword(pwd);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		login.showpsd();
+		System.out.println(cl.getCurrentDateTime());
 		login.login();
 		String str = cl.getPageTitle();
 		System.out.println("Current Page title is: " + str);
@@ -35,7 +36,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 6, enabled = true, dependsOnMethods = "logintoApplication")
+	@Test(groups = {"smoke"}, priority = 15, enabled = true)
 	public void logout() throws InterruptedException {
 		hm.logoutoption();
 		logger.info("Logged out of the application successfully");
@@ -44,7 +45,7 @@ public class LoginTestcase extends Basepage {
 	@Test(priority = 1, enabled = true, dependsOnMethods = "logintoApplication")
 	public void dashboardOperations() throws InterruptedException {
 		hm.dashboardclick();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		logger.info("Clicking dashboard option");
 	}
 
@@ -64,7 +65,7 @@ public class LoginTestcase extends Basepage {
 		hm.Hroperationmove();
 		hm.selectLocation();
 		logger.info("Performing the HR operations for location");
-		Thread.sleep(1000);
+		
 	}
 
 	@Test(priority = 4, dependsOnMethods = "logintoApplication")
@@ -72,14 +73,86 @@ public class LoginTestcase extends Basepage {
 		hm.Hroperationmove();
 		hm.SelectCompany();
 		logger.info("Performing the HR operations for company");
-		Thread.sleep(1000);
+		
 	}
 
-	@Test(priority = 5, dependsOnMethods = "logintoApplication")
+	@Test(priority = 14, dependsOnMethods = "logintoApplication")
 	public void hrOperationAsset() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectAssets();
 		logger.info("Performing the HR operations for assets");
-		Thread.sleep(4000);
+	
+	}
+
+	@Test(priority = 5, dependsOnMethods = "logintoApplication")
+	public void hrOperationDepartment() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectDepartment();
+		logger.info("Performing the HR operations for Department");
+		
+	}
+
+	@Test(priority = 6, dependsOnMethods = "logintoApplication")
+	public void hrOperationDesignation() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectDesignation();
+		logger.info("Performing the HR operations for designation");
+	
+	}
+
+	@Test(priority = 8, dependsOnMethods = "logintoApplication")
+	public void hrOperationnotification() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectNotfication();
+		logger.info("Performing the HR operations for notification");
+	
+	}
+
+	@Test(priority = 9, dependsOnMethods = "logintoApplication")
+	public void hrOperationProject() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectProject();
+		logger.info("Performing the HR operations for project");
+	
+	}
+
+	@Test(priority = 10, dependsOnMethods = "logintoApplication")
+	public void hrOperationHolidaysList() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectHolidays();
+		logger.info("Performing the HR operations for holidays");
+	
+	}
+
+	@Test(priority = 11, dependsOnMethods = "logintoApplication")
+	public void hrOperationjobs() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectJobs();
+		logger.info("Performing the HR operations for jobs");
+
+	}
+
+	@Test(priority = 13, dependsOnMethods = "logintoApplication")
+	public void hrOperationpolicy() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectPolicy();
+		logger.info("Performing the HR operations for policy");
+	
+	}
+
+	@Test(priority = 7, dependsOnMethods = "logintoApplication")
+	public void hrOperationLeavePlan() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectLeaveplan();
+		logger.info("Performing the HR operations for leave plan");
+		
+	}
+
+	@Test(priority = 12, dependsOnMethods = "logintoApplication")
+	public void hrOperationSkils() throws Exception {
+		hm.Hroperationmove();
+		hm.SelectSkills();
+		logger.info("Performing the HR operations for skills");
+		
 	}
 }

@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
-          <include name="hrOperationCompany"/>
-          <include name="logout"/>
+          <include name="hrOperationAsset"/>
           <include name="HroperationsTimeschedule"/>
+          <include name="logout"/>
+          <include name="hrOperationProject"/>
+          <include name="hrOperationjobs"/>
           <include name="dashboardOperations"/>
+          <include name="hrOperationHolidaysList"/>
+          <include name="hrOperationDesignation"/>
+          <include name="hrOperationCompany"/>
+          <include name="hrOperationSkils"/>
+          <include name="hrOperationnotification"/>
+          <include name="hrOperationLeavePlan"/>
+          <include name="hrOperationDepartment"/>
           <include name="hrOperationLocation"/>
-          <include name="logintoApplication"/>
-        </methods>
-      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
-      <class name="com.onpassive.Ostaff.BasePages.Basepage">
-        <methods>
+          <include name="hrOperationpolicy"/>
           <include name="tearDown"/>
+          <include name="logintoApplication"/>
           <include name="launchingbrowser"/>
         </methods>
-      </class> <!-- com.onpassive.Ostaff.BasePages.Basepage -->
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
