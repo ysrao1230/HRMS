@@ -12,6 +12,7 @@ public class Log4jdemo {
 		logger.error("this is error message");
 		logger.warn("this is warn message");
 		logger.fatal("this is fatal message");
+		logger.debug("Testing");
 	}
 
 }

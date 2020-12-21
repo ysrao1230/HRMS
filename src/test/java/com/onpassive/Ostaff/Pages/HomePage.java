@@ -25,11 +25,11 @@ public class HomePage extends Basepage {
 	WebElement logout;
 
 	// Webelement of dashboard
-	@FindBy(xpath = "//*[@id='sideMenuBar']/app-side-nav/div/div/mat-nav-list[1]/a/div/img")
+	@FindBy(xpath = "//p[normalize-space()='Dashboard']")
 	WebElement dashboard;
 
 	// Webelement of HR operation
-	@FindBy(xpath = "//*[@id=\"sideMenuBar\"]/app-side-nav/div/div/mat-nav-list[2]/a/div/div[3]/p")
+	@FindBy(xpath = "//p[normalize-space()='HR Operations']")
 	WebElement hroperation;
 
 	// Webelement of time schedule
@@ -37,7 +37,7 @@ public class HomePage extends Basepage {
 	WebElement TimeSchedule;
 
 	// Webelement of adding time schedule
-	@FindBy(xpath = "//i[@class='fa fa-plus action_ico']")
+	@FindBy(xpath = "//div[@class='create_new']")
 	WebElement addingTimeschedule;
 
 	// Webelement of Location
@@ -88,6 +88,10 @@ public class HomePage extends Basepage {
 	@FindBy(xpath = "//p[normalize-space()='Assets']")
 	WebElement Assets;
 
+	// Dashboard Text
+	@FindBy(xpath = "//span[@class='ng-star-inserted']")
+	WebElement dashBoardText;
+
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -113,14 +117,14 @@ public class HomePage extends Basepage {
 		cli.clickAction(hroperation);
 	}
 
-	public void TimeSchedule() throws Exception  {
+	public void TimeSchedule() throws Exception {
 		cli.sidebarscrolling(TimeSchedule);
 		cli.clickAction(TimeSchedule);
 	}
 
 	public void addingtimeScheduling() {
 		addingTimeschedule.click();
-		// addingTimeschedule.click();
+		addingTimeschedule.click();
 	}
 
 	public void selectLocation() throws Exception {
@@ -133,7 +137,7 @@ public class HomePage extends Basepage {
 		cli.clickAction(Company);
 	}
 
-	public void SelectDepartment() throws Exception  {
+	public void SelectDepartment() throws Exception {
 		cli.sidebarscrolling(Department);
 		cli.clickAction(Department);
 	}
@@ -148,32 +152,32 @@ public class HomePage extends Basepage {
 		cli.clickAction(LeavePlan);
 	}
 
-	public void SelectNotfication() throws Exception  {
+	public void SelectNotfication() throws Exception {
 		cli.sidebarscrolling(Notification);
 		cli.clickAction(Notification);
 	}
 
-	public void SelectProject() throws Exception  {
+	public void SelectProject() throws Exception {
 		cli.sidebarscrolling(Project);
 		cli.clickAction(Project);
 	}
 
-	public void SelectHolidays() throws Exception  {
+	public void SelectHolidays() throws Exception {
 		cli.sidebarscrolling(Holidayslist);
 		cli.clickAction(Holidayslist);
 	}
 
-	public void SelectJobs() throws Exception{
+	public void SelectJobs() throws Exception {
 		cli.sidebarscrolling(jobs);
 		cli.clickAction(jobs);
 	}
 
-	public void SelectSkills() throws Exception  {
+	public void SelectSkills() throws Exception {
 		cli.sidebarscrolling(skills);
 		cli.clickAction(skills);
 	}
 
-	public void SelectPolicy() throws Exception  {
+	public void SelectPolicy() throws Exception {
 		cli.sidebarscrolling(policy);
 		cli.clickAction(policy);
 	}
@@ -181,6 +185,10 @@ public class HomePage extends Basepage {
 	public void SelectAssets() throws Exception {
 		cli.sidebarscrolling(Assets);
 		cli.clickAction(Assets);
+	}
+
+	public String dashBoard() {
+		return dashBoardText.getText();
 	}
 
 }

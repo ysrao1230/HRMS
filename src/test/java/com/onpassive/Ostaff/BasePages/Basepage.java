@@ -5,9 +5,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.onpassive.Ostaff.Pages.HomePage;
 import com.onpassive.Ostaff.Utility.CommonLibrary;
@@ -22,37 +24,42 @@ public class Basepage implements ConstantValues {
 	protected static FileLibrary fl = new FileLibrary();
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
 	protected CommonLibrary cl;
-	
 
 	@BeforeTest
-	public void launchingbrowser() throws Exception {
+	@Parameters("Browser")
+	public void launchingbrowser(String browser) throws Exception {
 
-		String browserValue = fl.getPropKeyvalue(PROP_PATH, "browser");
+		String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
 
-		if (browserValue.equalsIgnoreCase("chrome")) {
+		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty(CHROME_KEY, CHROME_PATH);
 			driver = new ChromeDriver();
-		} else if (browserValue.equalsIgnoreCase("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox")) {
 
 			System.setProperty(FIREFOX_KEY, FIREFOX_PATH);
 			driver = new FirefoxDriver();
-			logger.info("Intializing browser");
 
+		} else if (browser.equalsIgnoreCase("edge")) {
+			System.setProperty(EDGE_KEY, EDGE_PATH);
+			driver = new EdgeDriver();
 		}
+
+		logger.info("Initializing the " + browser);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
 		hm = new HomePage(driver);
 		cl = new CommonLibrary();
-		
 
 	}
 
 	@AfterTest
-	public void tearDown() throws InterruptedException {
+	@Parameters("Browser")
+	public void tearDown(String browser) throws Exception {
+		String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
 		Thread.sleep(1000);
 		driver.close();
-		logger.info("Closed the browser");
+		logger.info("Closed the " +browser+" browser");
 	}
 }

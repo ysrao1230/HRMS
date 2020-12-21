@@ -37,7 +37,7 @@ public class FileLibrary {
 	public void writeDataToExcel(String path,String sheet,int row,int cell,String givenInput) throws Exception {
 		FileInputStream fis = new FileInputStream(path);
 		Workbook wb = WorkbookFactory .create(fis);
-		wb.getSheet(sheet).getRow(row).getCell(cell).setCellValue(givenInput);
+		wb.getSheet(sheet).getRow(row).createCell(cell).setCellValue(givenInput);
 		FileOutputStream fos = new FileOutputStream(path);
 		wb.write(fos);
 		wb.close();

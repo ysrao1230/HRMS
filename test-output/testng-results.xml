@@ -1,11 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="16" total="16" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-03T18:41:24 IST" name="Suite" finished-at="2020-12-03T18:41:24 IST" duration-ms="8">
+  <suite started-at="2020-12-21T17:15:11 IST" name="Suite" finished-at="2020-12-21T17:16:05 IST" duration-ms="53673">
     <groups>
+      <group name="smoke">
+        <method signature="LoginTestcase.logintoApplication()[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" name="logintoApplication" class="com.onpassive.Ostaff.TestCases.LoginTestcase"/>
+        <method signature="LoginTestcase.logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" name="logout" class="com.onpassive.Ostaff.TestCases.LoginTestcase"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2020-12-03T18:41:24 IST" name="Smoke" finished-at="2020-12-03T18:41:24 IST" duration-ms="8">
-    </test> <!-- Smoke -->
+    <test started-at="2020-12-21T17:15:11 IST" name="Test" finished-at="2020-12-21T17:16:05 IST" duration-ms="53673">
+      <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
+        <test-method is-config="true" signature="launchingbrowser(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:11 IST" name="launchingbrowser" finished-at="2020-12-21T17:15:19 IST" duration-ms="7532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingbrowser -->
+        <test-method signature="logintoApplication()[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:19 IST" name="logintoApplication" finished-at="2020-12-21T17:15:22 IST" duration-ms="3740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApplication -->
+        <test-method signature="dashboardOperations()[pri:1, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:22 IST" name="dashboardOperations" finished-at="2020-12-21T17:15:24 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardOperations -->
+        <test-method signature="HroperationsTimeschedule()[pri:2, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:24 IST" name="HroperationsTimeschedule" finished-at="2020-12-21T17:15:31 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="6646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HroperationsTimeschedule -->
+        <test-method signature="hrOperationLocation()[pri:3, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:31 IST" name="hrOperationLocation" finished-at="2020-12-21T17:15:33 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationLocation -->
+        <test-method signature="hrOperationCompany()[pri:4, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:33 IST" name="hrOperationCompany" finished-at="2020-12-21T17:15:36 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationCompany -->
+        <test-method signature="hrOperationDepartment()[pri:5, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:36 IST" name="hrOperationDepartment" finished-at="2020-12-21T17:15:38 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationDepartment -->
+        <test-method signature="hrOperationDesignation()[pri:6, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:38 IST" name="hrOperationDesignation" finished-at="2020-12-21T17:15:41 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationDesignation -->
+        <test-method signature="hrOperationLeavePlan()[pri:7, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:41 IST" name="hrOperationLeavePlan" finished-at="2020-12-21T17:15:43 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationLeavePlan -->
+        <test-method signature="hrOperationnotification()[pri:8, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:43 IST" name="hrOperationnotification" finished-at="2020-12-21T17:15:46 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationnotification -->
+        <test-method signature="hrOperationProject()[pri:9, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:46 IST" name="hrOperationProject" finished-at="2020-12-21T17:15:48 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationProject -->
+        <test-method signature="hrOperationHolidaysList()[pri:10, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:48 IST" name="hrOperationHolidaysList" finished-at="2020-12-21T17:15:51 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationHolidaysList -->
+        <test-method signature="hrOperationjobs()[pri:11, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:51 IST" name="hrOperationjobs" finished-at="2020-12-21T17:15:53 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationjobs -->
+        <test-method signature="hrOperationSkils()[pri:12, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:53 IST" name="hrOperationSkils" finished-at="2020-12-21T17:15:55 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationSkils -->
+        <test-method signature="hrOperationpolicy()[pri:13, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:55 IST" name="hrOperationpolicy" finished-at="2020-12-21T17:15:58 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationpolicy -->
+        <test-method signature="hrOperationAsset()[pri:14, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:15:58 IST" name="hrOperationAsset" finished-at="2020-12-21T17:16:00 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hrOperationAsset -->
+        <test-method signature="logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:16:00 IST" name="logout" finished-at="2020-12-21T17:16:04 IST" duration-ms="3297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2020-12-21T17:16:04 IST" name="tearDown" finished-at="2020-12-21T17:16:05 IST" duration-ms="1087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
