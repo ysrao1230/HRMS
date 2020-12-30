@@ -38,6 +38,9 @@ public class DropDown implements ConstantValues {
 
 		System.setProperty(CHROME_KEY, CHROME_PATH);
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
 		driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
@@ -51,19 +54,27 @@ public class DropDown implements ConstantValues {
 		dr.sidebarscrolling(hroperation);
 		dr.clickAction(hroperation);
 
-		WebElement location = driver.findElement(By.cssSelector("#location > div:nth-child(1) > p"));
-		dr.clickAction(location);
-
-		driver.findElement(By.xpath("//div[@class='create_new']//div")).click();
-
-		WebElement dropdown = driver.findElement(By.xpath("/html/body/app-root/app-user-layout/div/"
-				+ "div[2]/div/div[1]/app-create-branch/div/div[2]/div/form/div/div[2]/mat-form-field/div/div[1]/div/mat-select/div/div[2]"));
-				dropdown.click();
-				
-				driver.findElement(By.xpath("//*[@id='mat-option-5']")).click();
 		/*
+		 * WebElement location =
+		 * driver.findElement(By.cssSelector("#location > div:nth-child(1) > p"));
+		 * dr.clickAction(location);
+		 * 
+		 * driver.findElement(By.xpath("//div[@class='create_new']//div")).click();
+		 * 
+		 * WebElement dropdown = driver.findElement(By.xpath(
+		 * "/html/body/app-root/app-user-layout/div/div[2]/div/div[1]/app-create-branch/div/div[2]/div/form/div/div[2]/mat-form-field/div/div[1]/div/mat-select/div/div[2]"
+		 * )); dropdown.click();
+		 * 
+		 * driver.findElement(By.xpath("//span[normalize-space()='XEROX']")).click();
+		 * 
 		 * Select selct = new Select(dropdown); selct.selectByIndex(2);
 		 */
-	}
 
+		WebElement timeschedule = driver.findElement(By.xpath("//p[normalize-space()='Timing Schedule']"));
+		dr.clickAction(timeschedule);
+		WebElement createtimeschedule = driver.findElement(By.xpath("//div[@class='create_new']"));
+
+		createtimeschedule.click();
+		createtimeschedule.click();
+	}
 }

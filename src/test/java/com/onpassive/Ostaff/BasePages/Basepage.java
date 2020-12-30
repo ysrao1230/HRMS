@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.onpassive.Ostaff.Pages.HomePage;
+import com.onpassive.Ostaff.Pages.TimeSchedule;
 import com.onpassive.Ostaff.Utility.CommonLibrary;
 import com.onpassive.Ostaff.Utility.FileLibrary;
 
@@ -24,6 +25,7 @@ public class Basepage implements ConstantValues {
 	protected static FileLibrary fl = new FileLibrary();
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
 	protected CommonLibrary cl;
+	protected TimeSchedule ts;
 
 	@BeforeTest
 	@Parameters("Browser")
@@ -51,6 +53,7 @@ public class Basepage implements ConstantValues {
 		driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
 		hm = new HomePage(driver);
 		cl = new CommonLibrary();
+		ts = new TimeSchedule(driver);
 
 	}
 

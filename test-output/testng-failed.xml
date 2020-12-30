@@ -6,7 +6,9 @@
     <classes>
       <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
+          <include name="HroperationsTimeschedule"/>
           <include name="logout"/>
+          <include name="dashboardOperations"/>
           <include name="tearDown"/>
           <include name="logintoApplication"/>
           <include name="launchingbrowser"/>
