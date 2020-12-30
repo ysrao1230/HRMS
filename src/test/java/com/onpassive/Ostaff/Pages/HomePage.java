@@ -17,7 +17,7 @@ public class HomePage extends Basepage {
 	CommonLibrary cli = new CommonLibrary();
 
 	// Webelement of logout menu
-	@FindBy(xpath = "//i[@class='fa fa-angle-down']")
+	@FindBy(xpath = "//i[@class='fa fa-ellipsis-h hdr_right_user_menu_icon']")
 	WebElement logoutmenu;
 
 	// Webelement of logout

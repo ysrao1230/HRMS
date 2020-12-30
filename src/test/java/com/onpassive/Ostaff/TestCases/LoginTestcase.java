@@ -32,7 +32,7 @@ public class LoginTestcase extends Basepage {
 		login.login();
 		String str = cl.getPageTitle();
 		System.out.println("Current Page title is: " + str);
-		assertEquals("OnPassive HRMS", str);
+		assertEquals("OStaff", str);
 		logger.info("Logged in to allpication successfully");
 		Assert.assertFalse(false, "Assert false test message");
 		fl.writeDataToExcel(LOGIN_EXCEL, "Sheet1", 1, 3, "Fail");
@@ -42,7 +42,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(groups = { "smoke" }, priority = 15, enabled = true)
+	@Test(groups = { "smoke" }, priority = 15, enabled = true, dependsOnMethods = "logintoApplication")
 	public void logout() throws InterruptedException {
 		hm.logoutoption();
 		logger.info("Logged out of the application successfully");

@@ -6,21 +6,7 @@
     <classes>
       <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
-          <include name="hrOperationAsset"/>
-          <include name="HroperationsTimeschedule"/>
           <include name="logout"/>
-          <include name="hrOperationProject"/>
-          <include name="hrOperationjobs"/>
-          <include name="dashboardOperations"/>
-          <include name="hrOperationHolidaysList"/>
-          <include name="hrOperationDesignation"/>
-          <include name="hrOperationCompany"/>
-          <include name="hrOperationSkils"/>
-          <include name="hrOperationnotification"/>
-          <include name="hrOperationLeavePlan"/>
-          <include name="hrOperationDepartment"/>
-          <include name="hrOperationLocation"/>
-          <include name="hrOperationpolicy"/>
           <include name="tearDown"/>
           <include name="logintoApplication"/>
           <include name="launchingbrowser"/>
