@@ -2,47 +2,47 @@
 <testng-results ignored="12" total="16" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-01T21:41:35 IST" name="Suite" finished-at="2021-01-01T21:42:21 IST" duration-ms="46123">
+  <suite started-at="2021-01-02T11:27:19 IST" name="Suite" finished-at="2021-01-02T11:30:01 IST" duration-ms="161650">
     <groups>
       <group name="smoke">
-        <method signature="LoginTestcase.logintoApplication()[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@5b057c8c]" name="logintoApplication" class="com.onpassive.Ostaff.TestCases.LoginTestcase"/>
-        <method signature="LoginTestcase.logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@5b057c8c]" name="logout" class="com.onpassive.Ostaff.TestCases.LoginTestcase"/>
+        <method signature="LoginTestcase.logintoApplication()[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" name="logintoApplication" class="com.onpassive.Ostaff.TestCases.LoginTestcase"/>
+        <method signature="LoginTestcase.logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" name="logout" class="com.onpassive.Ostaff.TestCases.LoginTestcase"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-01-01T21:41:35 IST" name="Test" finished-at="2021-01-01T21:42:21 IST" duration-ms="46123">
+    <test started-at="2021-01-02T11:27:19 IST" name="Test2" finished-at="2021-01-02T11:30:01 IST" duration-ms="161650">
       <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
-        <test-method is-config="true" signature="launchingbrowser(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@5b057c8c]" started-at="2021-01-01T21:41:35 IST" name="launchingbrowser" finished-at="2021-01-01T21:41:52 IST" duration-ms="17550" status="PASS">
+        <test-method is-config="true" signature="launchingbrowser(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2021-01-02T11:27:19 IST" name="launchingbrowser" finished-at="2021-01-02T11:28:24 IST" duration-ms="65266" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingbrowser -->
-        <test-method signature="logintoApplication()[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@5b057c8c]" started-at="2021-01-01T21:41:52 IST" name="logintoApplication" finished-at="2021-01-01T21:42:06 IST" duration-ms="13524" status="PASS">
+        <test-method signature="logintoApplication()[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2021-01-02T11:28:24 IST" name="logintoApplication" finished-at="2021-01-02T11:29:40 IST" duration-ms="76009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoApplication -->
-        <test-method signature="dashboardOperations()[pri:1, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@5b057c8c]" started-at="2021-01-01T21:42:06 IST" name="dashboardOperations" finished-at="2021-01-01T21:42:08 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2330" status="PASS">
+        <test-method signature="dashboardOperations()[pri:1, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2021-01-02T11:29:40 IST" name="dashboardOperations" finished-at="2021-01-02T11:29:42 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboardOperations -->
-        <test-method signature="HroperationsTimeschedule()[pri:2, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@5b057c8c]" started-at="2021-01-01T21:42:08 IST" name="HroperationsTimeschedule" finished-at="2021-01-01T21:42:16 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="8073" status="PASS">
+        <test-method signature="HroperationsTimeschedule()[pri:2, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2021-01-02T11:29:42 IST" name="HroperationsTimeschedule" finished-at="2021-01-02T11:29:50 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="8072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HroperationsTimeschedule -->
-        <test-method signature="logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@5b057c8c]" started-at="2021-01-01T21:42:16 IST" name="logout" finished-at="2021-01-01T21:42:20 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="3390" status="PASS">
+        <test-method signature="logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2021-01-02T11:29:50 IST" name="logout" finished-at="2021-01-02T11:29:54 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="3418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="tearDown(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@5b057c8c]" started-at="2021-01-01T21:42:20 IST" name="tearDown" finished-at="2021-01-01T21:42:21 IST" duration-ms="1163" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@2ece4966]" started-at="2021-01-02T11:29:54 IST" name="tearDown" finished-at="2021-01-02T11:30:01 IST" duration-ms="6750" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
@@ -50,6 +50,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
-    </test> <!-- Test -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
