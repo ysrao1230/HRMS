@@ -33,10 +33,14 @@ public class LoginPage extends Basepage {
 	// @FindBy(xpath="//div[@class='login-button col-sm-12']")
 	@FindBy(xpath = "//*[text()='Login Here']")
 	WebElement loginbutton;
+	
+	//invalid success
+	@FindBy(xpath ="//div[@aria-label='UserName Or Password Is Wrong']")
+	WebElement WrongMessage;
 
-	public LoginPage() {
-		PageFactory.initElements(driver, LoginPage.class);
-	}
+	/*
+	 * public LoginPage() { PageFactory.initElements(driver, LoginPage.class); }
+	 */
 
 	// Setup user name
 	public void uname(String name) {
