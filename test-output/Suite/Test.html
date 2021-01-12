@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 12 15:55:53 IST 2021</td>
+<td>Started on:</td><td>Tue Jan 12 18:50:14 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>81 seconds (81901 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22021 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,62 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.HroperationsTimeschedule()'><b>HroperationsTimeschedule</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;create_new&apos;]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
-System info: host: &apos;DESKTOP-A5OTGBU&apos;, ip: &apos;192.168.12.34&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 819e3615fbf52c38d92944b6bcbdb31d
-*** Element info: {Using=xpath, value=//div[@class=&apos;create_new&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy27.click(Unknown Source)
-	at com.onpassive.Ostaff.Pages.HomePage.addingtimeScheduling(HomePage.java:128)
-	at com.onpassive.Ostaff.TestCases.LoginTestcase.HroperationsTimeschedule(LoginTestcase.java:65)
+<td title='com.onpassive.Ostaff.TestCases.CompanyTestcase.hrOperationCompany()'><b>hrOperationCompany</b><br>Test class: com.onpassive.Ostaff.TestCases.CompanyTestcase</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.onpassive.Ostaff.Pages.HomePage.Hroperationmove()&quot; because &quot;this.hm&quot; is null
+	at com.onpassive.Ostaff.TestCases.CompanyTestcase.hrOperationCompany(CompanyTestcase.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace629016615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace629016615'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;create_new&apos;]&quot;}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
-System info: host: &apos;DESKTOP-A5OTGBU&apos;, ip: &apos;192.168.12.34&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 819e3615fbf52c38d92944b6bcbdb31d
-*** Element info: {Using=xpath, value=//div[@class=&apos;create_new&apos;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy27.click(Unknown Source)
-	at com.onpassive.Ostaff.Pages.HomePage.addingtimeScheduling(HomePage.java:128)
-	at com.onpassive.Ostaff.TestCases.LoginTestcase.HroperationsTimeschedule(LoginTestcase.java:65)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134976216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134976216'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.onpassive.Ostaff.Pages.HomePage.Hroperationmove()&quot; because &quot;this.hm&quot; is null
+	at com.onpassive.Ostaff.TestCases.CompanyTestcase.hrOperationCompany(CompanyTestcase.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,8 +111,8 @@ Session ID: 819e3615fbf52c38d92944b6bcbdb31d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>19</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
+<td>0</td>
+<td>com.onpassive.Ostaff.TestCases.CompanyTestcase@7894f09b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -174,77 +125,12 @@ Session ID: 819e3615fbf52c38d92944b6bcbdb31d
 <td title='com.onpassive.Ostaff.TestCases.LoginTestcase.dashboardOperations()'><b>dashboardOperations</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
 <td></td>
 <td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationAsset()'><b>hrOperationAsset</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationCompany()'><b>hrOperationCompany</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationDepartment()'><b>hrOperationDepartment</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationDesignation()'><b>hrOperationDesignation</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationHolidaysList()'><b>hrOperationHolidaysList</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationLeavePlan()'><b>hrOperationLeavePlan</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationLocation()'><b>hrOperationLocation</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationProject()'><b>hrOperationProject</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationSkils()'><b>hrOperationSkils</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationjobs()'><b>hrOperationjobs</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationnotification()'><b>hrOperationnotification</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.hrOperationpolicy()'><b>hrOperationpolicy</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>2</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@1dd0e7c4</td></tr>
 <tr>
 <td title='com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication()'><b>logintoApplication</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
 <td></td>
-<td>7</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
-<tr>
-<td title='com.onpassive.Ostaff.TestCases.LoginTestcase.logout()'><b>logout</b><br>Test class: com.onpassive.Ostaff.TestCases.LoginTestcase</td>
-<td></td>
-<td>3</td>
-<td>com.onpassive.Ostaff.TestCases.LoginTestcase@60dce7ea</td></tr>
+<td>5</td>
+<td>com.onpassive.Ostaff.TestCases.LoginTestcase@1dd0e7c4</td></tr>
 </table><p>
 </body>
 </html>

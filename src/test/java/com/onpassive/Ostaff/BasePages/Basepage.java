@@ -11,6 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.onpassive.Ostaff.Pages.Company;
 import com.onpassive.Ostaff.Pages.HomePage;
 import com.onpassive.Ostaff.Pages.TimeSchedule;
 import com.onpassive.Ostaff.Utility.CommonLibrary;
@@ -26,6 +27,8 @@ public class Basepage implements ConstantValues {
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
 	protected CommonLibrary cl;
 	protected TimeSchedule ts;
+	protected Company comp;
+	
 
 	@BeforeTest
 	@Parameters("Browser")
@@ -54,7 +57,7 @@ public class Basepage implements ConstantValues {
 		hm = new HomePage(driver);
 		cl = new CommonLibrary();
 		ts = new TimeSchedule(driver);
-
+		comp = new Company(driver);
 	}
 
 	@AfterTest

@@ -45,9 +45,11 @@ public class HomePage extends Basepage {
 	@FindBy(css = "#location > div:nth-child(1) > p")
 	WebElement Location;
 
-	// Webelement of Company
-	@FindBy(xpath = "//p[normalize-space()='Company']")
-	WebElement Company;
+	/*
+	 * // Webelement of Company
+	 * 
+	 * @FindBy(xpath = "//p[normalize-space()='Company']") WebElement Company;
+	 */
 
 	// Webelement of Department
 	@FindBy(xpath = "//p[normalize-space()='Department']")
@@ -133,10 +135,10 @@ public class HomePage extends Basepage {
 		cli.clickAction(Location);
 	}
 
-	public void SelectCompany() throws Exception {
-		cli.sidebarscrolling(Company);
-		cli.clickAction(Company);
-	}
+	/*
+	 * public void SelectCompany() throws Exception { cli.sidebarscrolling(Company);
+	 * cli.clickAction(Company); }
+	 */
 
 	public void SelectDepartment() throws Exception {
 		cli.sidebarscrolling(Department);
