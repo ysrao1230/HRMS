@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.onpassive.Ostaff.BasePages.Basepage;
 import com.onpassive.Ostaff.Utility.CommonLibrary;
 
-public class Company {
+public class Company extends Basepage {
 
 	private WebDriver driver;
 	CommonLibrary comnlib = new CommonLibrary();

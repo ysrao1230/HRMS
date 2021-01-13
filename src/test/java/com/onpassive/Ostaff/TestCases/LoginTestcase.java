@@ -2,8 +2,12 @@ package com.onpassive.Ostaff.TestCases;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -40,6 +44,14 @@ public class LoginTestcase extends Basepage {
 		Assert.assertTrue(true, hm.dashBoard());
 		fl.writeDataToExcel(LOGIN_EXCEL, "Sheet1", 2, 3, "Pass");
 		System.out.println("Writting Done");
+
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+
+		System.out.println("Number of links on webpage: " + links.size());
+
+		for (WebElement elm : links) {
+			System.out.println(elm.getAttribute("href"));
+		}
 
 	}
 

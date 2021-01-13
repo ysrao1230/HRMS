@@ -18,7 +18,7 @@ public class CompanyTestcase extends Basepage {
 	@Test(priority = 0, enabled = true)
 	public void hrOperationCompany() throws Exception {
 		System.out.println("Moving to company operations");
-		//hm.Hroperationmove();
+		hm.Hroperationmove();
 		comp = new Company(driver);
 		comp.SelectCompany();
 		logger.info("Performing the HR operations for company");
