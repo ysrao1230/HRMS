@@ -1,7 +1,9 @@
 package com.onpassive.Ostaff.BasePages;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -89,6 +91,7 @@ public class B {
 			System.out.println(num3 + " is the largest Number");
 
 		b.calculate(2000, 5, 0.08, 12);
+		b.duplicateCharOfString("srinivasa rao");
 
 	}
 
@@ -97,5 +100,51 @@ public class B {
 		double cinterest = amount - p;
 		System.out.println("Compound Interest after " + t + " years: " + cinterest);
 		System.out.println("Amount after " + t + " years: " + amount);
+	}
+	
+	public void duplicateCharOfString(String str) {
+		// Creating a HashMap containing char 
+        // as a key and occurrences as a value 
+        Map<Character, Integer> map 
+            = new HashMap<Character, Integer>(); 
+  
+        // Converting given string into 
+        // a char array 
+        char[] charArray = str.toCharArray(); 
+  
+        // Checking each character 
+        // of charArray 
+        for (char c : charArray) { 
+  
+            if (map.containsKey(c)) { 
+  
+                // If character is present 
+                // in map incrementing it's 
+                // count by 1 
+                map.put(c, map.get(c) + 1); 
+            } 
+            else { 
+  
+                // If character is not present 
+                // in map putting this 
+                // character into map with 
+                // 1 as it's value. 
+                map.put(c, 1); 
+            } 
+        } 
+  
+        // Traverse the HashMap, check 
+        // if the count of the character 
+        // is greater than 1 then print 
+        // the character and its frequency 
+        for (Map.Entry<Character, Integer> entry : 
+             map.entrySet()) { 
+  
+            if (entry.getValue() > 1) { 
+                System.out.println(entry.getKey() 
+                                   + " : "
+                                   + entry.getValue()); 
+            } 
+        } 
 	}
 }
