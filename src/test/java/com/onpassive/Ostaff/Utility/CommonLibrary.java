@@ -20,7 +20,6 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.onpassive.Ostaff.BasePages.Basepage;
-
 public class CommonLibrary extends Basepage {
 	public void waitForElementVisibility(By locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -112,5 +111,4 @@ public class CommonLibrary extends Basepage {
 		Thread.sleep(2000);
 		return element;
 	}
-
 }
