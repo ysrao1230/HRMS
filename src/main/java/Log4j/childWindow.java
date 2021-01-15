@@ -49,7 +49,7 @@ public class childWindow {
 		ArrayList<String> cars = new ArrayList<String>();
 		cars.add("Volvo");
 		cars.add("BMW");
-		cars.add("Ford");
+		cars.add("Tesla");
 		cars.add("Mazda");
 
 		// Get the iterator
