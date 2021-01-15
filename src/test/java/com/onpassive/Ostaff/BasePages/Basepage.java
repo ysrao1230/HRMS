@@ -53,7 +53,8 @@ public class Basepage implements ConstantValues {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
-		driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
+		//driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
+		driver.get(fl.getCellData(LOGIN_EXCEL, "Sheet1", 0, 6));
 		hm = new HomePage(driver);
 		cl = new CommonLibrary();
 		ts = new TimeSchedule(driver);
