@@ -17,7 +17,13 @@ public class childWindow {
 		driver.get("https://demoqa.com/browser-windows");
 
 		// Open new child window within the main window
-		driver.findElement(By.id("windowButton")).click();
+		WebElement elem = driver.findElement(By.xpath("//button[normalize-space()='New Tab']"));
+
+		for (int i = 0; i < 3; i++) {
+			elem.click();
+			Thread.sleep(5000);
+
+		}
 
 		// Get handles of the windows
 		String mainWindowHandle = driver.getWindowHandle();
@@ -41,23 +47,36 @@ public class childWindow {
 		}
 		System.out.println("Switching to the main window after all child operation performance");
 		driver.switchTo().window(mainWindowHandle);
-		System.out.println(driver.getTitle());
+		System.out.println(driver.findElement(By.xpath("//div[@class='main-header']")).getText());
 		Thread.sleep(3000);
 		driver.quit();
 
 		// Make a collection
+		System.out.println("***********ITERATION OF DATA************");
 		ArrayList<String> cars = new ArrayList<String>();
 		cars.add("Volvo");
 		cars.add("BMW");
 		cars.add("Tesla");
 		cars.add("Mazda");
-
+		System.out.println(" ");
 		// Get the iterator
 		Iterator<String> it = cars.iterator();
+		System.out.println(it.next());
 		System.out.println(" ");
 		// Print the first item
 		while (it.hasNext()) {
 			System.out.println(it.next());
+		}
+
+		// Array List
+		System.out.println("***********ARRAY LIST DATA************");
+		ArrayList<String> carz = new ArrayList<String>();
+		carz.add("Benz");
+		carz.add("Audi");
+		carz.add("Swift");
+		carz.add("Q5");
+		for (String i : carz) {
+			System.out.println(i);
 		}
 	}
 
