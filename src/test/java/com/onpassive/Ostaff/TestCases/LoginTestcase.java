@@ -26,9 +26,9 @@ public class LoginTestcase extends Basepage {
 		logger.info("page loading info");
 		login = new LoginPage(driver);
 		logger.info("Trying to login to the application without any errors");
-		String uname = fl.getCellData(LOGIN_EXCEL, "Sheet1", 2, 0);
+		String uname = fl.getCellData(LOGIN_EXCEL, "Sheet1", 1, 0);
 		login.uname(uname);
-		String pwd = fl.getCellData(LOGIN_EXCEL, "Sheet1", 2, 1);
+		String pwd = fl.getCellData(LOGIN_EXCEL, "Sheet1", 1, 1);
 		login.pasword(pwd);
 		Thread.sleep(2000);
 		login.showpsd();

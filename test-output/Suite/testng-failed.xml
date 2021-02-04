@@ -4,13 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.onpassive.Ostaff.TestCases.CompanyTestcase">
+      <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
-          <include name="hrOperationCompany"/>
+          <include name="dashboardOperations"/>
           <include name="tearDown"/>
+          <include name="logintoApplication"/>
           <include name="launchingbrowser"/>
         </methods>
-      </class> <!-- com.onpassive.Ostaff.TestCases.CompanyTestcase -->
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

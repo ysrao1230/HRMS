@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,8 +12,12 @@ import java.util.Set;
 
 public class childWindow {
 	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = null;
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		System.out.println("OPENING BROWSER USING INCOGNITO MODE");
+		options.addArguments("--incognito");
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://demoqa.com/browser-windows");
 
