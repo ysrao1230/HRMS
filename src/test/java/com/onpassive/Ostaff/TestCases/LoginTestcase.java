@@ -7,6 +7,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -55,7 +56,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(groups = { "smoke" }, priority = 15, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(groups = { "smoke" }, priority = 15, enabled = true, dependsOnMethods = "logintoApplication")
 	public void logout() throws InterruptedException {
 		hm.logoutoption();
 		logger.info("Logged out of the application successfully");
@@ -68,7 +69,7 @@ public class LoginTestcase extends Basepage {
 		logger.info("Clicking dashboard option");
 	}
 
-	@Test(priority = 2, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 2, enabled = true, dependsOnMethods = "logintoApplication")
 	public void HroperationsTimeschedule() throws Exception {
 		hm.Hroperationaction();
 		logger.info("Performing the HR operations");
@@ -77,17 +78,15 @@ public class LoginTestcase extends Basepage {
 		hm.addingtimeScheduling();
 		logger.info("Adding the time scheduling");
 		Thread.sleep(2000);
-		ts.companyDropdownSelection();
-		logger.info("Company drop down selection");
-		ts.companydropdownlistselection();
-		logger.info("Company info Selected");
-		ts.branchSelection();
-		logger.info("branch drop down selection");
-		ts.branchlistselection();
-		logger.info("Branch selected from  list");
+		/*
+		 * ts.companyDropdownSelection(); logger.info("Company drop down selection");
+		 * ts.companydropdownlistselection(); logger.info("Company info Selected");
+		 * ts.branchSelection(); logger.info("branch drop down selection");
+		 * ts.branchlistselection(); logger.info("Branch selected from  list");
+		 */
 	}
 
-	@Test(priority = 3, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 3, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationLocation() throws Exception {
 		hm.Hroperationmove();
 		hm.selectLocation();
@@ -103,15 +102,14 @@ public class LoginTestcase extends Basepage {
 	 * }
 	 */
 
-	@Test(priority = 14, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 14, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationAsset() throws Exception {
-		hm.Hroperationmove();
 		hm.SelectAssets();
 		logger.info("Performing the HR operations for assets");
 
 	}
 
-	@Test(priority = 5, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 5, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationDepartment() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectDepartment();
@@ -119,7 +117,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 6, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 6, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationDesignation() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectDesignation();
@@ -127,7 +125,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 8, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 8, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationnotification() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectNotfication();
@@ -135,7 +133,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 9, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 9, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationProject() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectProject();
@@ -143,7 +141,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 10, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 10, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationHolidaysList() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectHolidays();
@@ -151,7 +149,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 11, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 11, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationjobs() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectJobs();
@@ -159,7 +157,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 13, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 13, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationpolicy() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectPolicy();
@@ -167,7 +165,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 7, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 7, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationLeavePlan() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectLeaveplan();
@@ -175,7 +173,7 @@ public class LoginTestcase extends Basepage {
 
 	}
 
-	@Test(priority = 12, enabled = false, dependsOnMethods = "logintoApplication")
+	@Test(priority = 12, enabled = true, dependsOnMethods = "logintoApplication")
 	public void hrOperationSkils() throws Exception {
 		hm.Hroperationmove();
 		hm.SelectSkills();

@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.onpassive.Ostaff.BasePages.DateSelection">
+      <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
-          <include name="dateSelection"/>
-          <include name="launchingChrome"/>
+          <include name="hrOperationLeavePlan"/>
           <include name="tearDown"/>
+          <include name="logintoApplication"/>
+          <include name="launchingbrowser"/>
         </methods>
-      </class> <!-- com.onpassive.Ostaff.BasePages.DateSelection -->
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

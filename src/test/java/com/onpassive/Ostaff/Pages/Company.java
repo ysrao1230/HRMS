@@ -10,7 +10,7 @@ import com.onpassive.Ostaff.Utility.CommonLibrary;
 
 public class Company extends Basepage {
 
-	private WebDriver driver;
+	
 	CommonLibrary comnlib = new CommonLibrary();
 
 	// Webelement of Company

@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TimeSchedule {
+import com.onpassive.Ostaff.BasePages.Basepage;
+
+public class TimeSchedule extends Basepage {
 
 	WebDriver driver;
 

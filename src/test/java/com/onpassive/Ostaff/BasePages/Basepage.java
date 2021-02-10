@@ -22,7 +22,7 @@ import Log4j.Log4jdemo;
 public class Basepage implements ConstantValues {
 
 	protected static WebDriver driver;
-	protected HomePage hm;
+	public HomePage hm;
 	protected static FileLibrary fl = new FileLibrary();
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
 	protected CommonLibrary cl;
@@ -34,7 +34,7 @@ public class Basepage implements ConstantValues {
 	@Parameters("Browser")
 	public void launchingbrowser(String browser) throws Exception {
 
-		String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
+		//String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty(CHROME_KEY, CHROME_PATH);
@@ -64,7 +64,7 @@ public class Basepage implements ConstantValues {
 	@AfterTest
 	@Parameters("Browser")
 	public void tearDown(String browser) throws Exception {
-		String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
+		//String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
 		Thread.sleep(1000);
 		driver.close();
 		logger.info("Closed the " +browser+" browser");
