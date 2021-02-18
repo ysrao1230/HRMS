@@ -16,6 +16,25 @@ public class Company extends Basepage {
 	// Webelement of Company
 	@FindBy(xpath = "//p[normalize-space()='Company']")
 	WebElement Company;
+	
+	//Add company
+	@FindBy(xpath = "//i[@class='fa fa-plus action_ico']")
+	WebElement addCompany;
+	
+	//Compnay Name
+	@FindBy(xpath="//input[@id='mat-input-15']")
+	WebElement CompanyName;
+	
+	//CompanyContact
+	@FindBy(xpath="//input[@id='mat-input-16']")
+	WebElement CompanyContact;
+	
+	//Company Emial
+	@FindBy(xpath="//input[@id='mat-input-16']")
+	WebElement CompanyEmail;
+	
+	@FindBy(xpath="//input[@id='mat-input-18']")
+	WebElement CompanyWebsite;
 
 	public void SelectCompany() throws Exception {
 		comnlib.sidebarscrolling(Company);
