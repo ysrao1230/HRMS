@@ -5,7 +5,7 @@
     <classes>
       <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
-          <include name="hrOperationLeavePlan"/>
+          <include name="logout"/>
           <include name="tearDown"/>
           <include name="logintoApplication"/>
           <include name="launchingbrowser"/>

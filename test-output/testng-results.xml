@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="13" total="15" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-10T10:46:44 IST" name="Suite" finished-at="2021-02-10T10:47:40 IST" duration-ms="55964">
+  <suite started-at="2021-02-19T18:58:17 IST" name="Suite" finished-at="2021-02-19T18:58:28 IST" duration-ms="10670">
     <groups>
       <group name="smoke">
-        <method signature="LoginTestcase.logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" name="logout" class="com.onpassive.Ostaff.TestCases.LoginTestcase"/>
+        <method signature="LoginTestcase.logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@7be58f16]" name="logout" class="com.onpassive.Ostaff.TestCases.LoginTestcase"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-02-10T10:46:44 IST" name="Test" finished-at="2021-02-10T10:47:40 IST" duration-ms="55964">
+    <test started-at="2021-02-19T18:58:17 IST" name="Test" finished-at="2021-02-19T18:58:28 IST" duration-ms="10670">
       <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
-        <test-method is-config="true" signature="launchingbrowser(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:46:44 IST" name="launchingbrowser" finished-at="2021-02-10T10:46:56 IST" duration-ms="11839" status="PASS">
+        <test-method is-config="true" signature="launchingbrowser(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@7be58f16]" started-at="2021-02-19T18:58:17 IST" name="launchingbrowser" finished-at="2021-02-19T18:58:26 IST" duration-ms="9070" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,67 +21,86 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingbrowser -->
-        <test-method signature="logintoApplication()[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:46:56 IST" name="logintoApplication" finished-at="2021-02-10T10:47:01 IST" duration-ms="5103" status="PASS">
+        <test-method signature="logintoApplication()[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@7be58f16]" started-at="2021-02-19T18:58:26 IST" name="logintoApplication" finished-at="2021-02-19T18:58:27 IST" duration-ms="488" status="FAIL">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Media was not found at [Screenshot.png]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Media was not found at [Screenshot.png]
+at com.aventstack.extentreports.reporter.BasicFileReporter.mediaExists(BasicFileReporter.java:248)
+at com.aventstack.extentreports.reporter.BasicFileReporter.onScreenCaptureAdded(BasicFileReporter.java:236)
+at com.aventstack.extentreports.ExtentObservable.addScreenCapture(ExtentObservable.java:360)
+at com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(ExtentTest.java:1125)
+at com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(ExtentTest.java:1141)
+at com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication(LoginTestcase.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoApplication -->
-        <test-method signature="dashboardOperations()[pri:1, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:01 IST" name="dashboardOperations" finished-at="2021-02-10T10:47:03 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dashboardOperations -->
-        <test-method signature="HroperationsTimeschedule()[pri:2, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:03 IST" name="HroperationsTimeschedule" finished-at="2021-02-10T10:47:09 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="6570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HroperationsTimeschedule -->
-        <test-method signature="hrOperationLocation()[pri:3, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:09 IST" name="hrOperationLocation" finished-at="2021-02-10T10:47:12 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationLocation -->
-        <test-method signature="hrOperationDepartment()[pri:5, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:12 IST" name="hrOperationDepartment" finished-at="2021-02-10T10:47:14 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationDepartment -->
-        <test-method signature="hrOperationDesignation()[pri:6, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:14 IST" name="hrOperationDesignation" finished-at="2021-02-10T10:47:16 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationDesignation -->
-        <test-method signature="hrOperationLeavePlan()[pri:7, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:16 IST" name="hrOperationLeavePlan" finished-at="2021-02-10T10:47:19 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2385" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationLeavePlan -->
-        <test-method signature="hrOperationnotification()[pri:8, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:19 IST" name="hrOperationnotification" finished-at="2021-02-10T10:47:21 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2387" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationnotification -->
-        <test-method signature="hrOperationProject()[pri:9, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:21 IST" name="hrOperationProject" finished-at="2021-02-10T10:47:24 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationProject -->
-        <test-method signature="hrOperationHolidaysList()[pri:10, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:24 IST" name="hrOperationHolidaysList" finished-at="2021-02-10T10:47:26 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationHolidaysList -->
-        <test-method signature="hrOperationjobs()[pri:11, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:26 IST" name="hrOperationjobs" finished-at="2021-02-10T10:47:28 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationjobs -->
-        <test-method signature="hrOperationSkils()[pri:12, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:28 IST" name="hrOperationSkils" finished-at="2021-02-10T10:47:31 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationSkils -->
-        <test-method signature="hrOperationpolicy()[pri:13, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:31 IST" name="hrOperationpolicy" finished-at="2021-02-10T10:47:33 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2383" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationpolicy -->
-        <test-method signature="hrOperationAsset()[pri:14, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:33 IST" name="hrOperationAsset" finished-at="2021-02-10T10:47:35 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="2149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hrOperationAsset -->
-        <test-method signature="logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:35 IST" name="logout" finished-at="2021-02-10T10:47:39 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="3366" status="PASS">
+        <test-method signature="logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@7be58f16]" started-at="2021-02-19T18:58:27 IST" name="logout" finished-at="2021-02-19T18:58:27 IST" depends-on-methods="com.onpassive.Ostaff.TestCases.LoginTestcase.logintoApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LoginTestcase.logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@7be58f16] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LoginTestcase.logout()[pri:15, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@7be58f16] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="tearDown(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@47605f2f]" started-at="2021-02-10T10:47:39 IST" name="tearDown" finished-at="2021-02-10T10:47:40 IST" duration-ms="1143" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.String)[pri:0, instance:com.onpassive.Ostaff.TestCases.LoginTestcase@7be58f16]" started-at="2021-02-19T18:58:27 IST" name="tearDown" finished-at="2021-02-19T18:58:28 IST" duration-ms="1085" status="PASS">
           <params>
             <param index="0">
               <value>

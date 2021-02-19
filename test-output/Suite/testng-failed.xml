@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="Browser" value="firefox"/>
+    <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
-          <include name="HroperationsTimeschedule"/>
+          <include name="logout"/>
           <include name="tearDown"/>
           <include name="logintoApplication"/>
           <include name="launchingbrowser"/>
