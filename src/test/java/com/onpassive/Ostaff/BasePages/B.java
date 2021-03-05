@@ -1,17 +1,10 @@
 package com.onpassive.Ostaff.BasePages;
 
-import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.onpassive.Ostaff.Utility.FileLibrary;
 
 public class B {
 	static WebDriver driver;
@@ -66,7 +59,6 @@ public class B {
 		 * Thread.sleep(5000); driver.quit();
 		 */
 
-		String rev = "";
 		String str = "Hi how are you welcome to Tutorialspoint";
 		String words[] = str.split(" ");
 		for (String token : words) {

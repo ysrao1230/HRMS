@@ -5,23 +5,24 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.onpassive.Ostaff.BasePages.Basepage;
-import com.onpassive.Ostaff.Pages.Company;
 
 import Log4j.Log4jdemo;
 
 public class CompanyTestcase extends Basepage {
 
-	Company comp;
+	
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
 
-	@Test(priority = 0, enabled = true)
+	@Test()
 	public void hrOperationCompany() throws Exception {
 		System.out.println("Moving to company operations");
-		logger.info(hm);
-		hm.Hroperationmove();
-		comp = new Company(driver);
+		//comp.Hroperationaction();
 		comp.SelectCompany();
+		System.out.println(comp.getText());
 		logger.info("Performing the HR operations for company");
+		comp.addingNewCompany();
+		comp.SetCompanyName("Onpassive");
+		Thread.sleep(30000);
 
 	}
 

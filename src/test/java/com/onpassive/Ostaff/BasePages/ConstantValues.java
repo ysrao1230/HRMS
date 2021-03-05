@@ -8,6 +8,6 @@ public interface ConstantValues {
 	String FIREFOX_PATH = "./driver/geckodriver.exe";
 	String EDGE_PATH = "E:/Selenium/msedgedriver.exe";
 	String LOGIN_EXCEL = "./ExternalData/loginData.xlsx";
-	String FORMS_DATA = "";
+	String FORMS_DATA = "./ExternalData/exceldata1.xlsx";
 	String PROP_PATH = "./ConfigFiles/ApplicationConfig.properties";
 }

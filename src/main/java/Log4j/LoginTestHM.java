@@ -20,7 +20,7 @@ public class LoginTestHM {
 	// method return HashMap object with data pairs
 	static HashMap<String, String> logindata() {
 		HashMap<String, String> hm = new HashMap<String, String>();
-		hm.put("x", "manikanta admin@123");
+		hm.put("x", "sathish admin@123");
 		hm.put("y", "mercury1@mercury1");
 		hm.put("z", "mercury2@mercury2");
 

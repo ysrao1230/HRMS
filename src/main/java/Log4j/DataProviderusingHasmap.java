@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 public class DataProviderusingHasmap {
 
-	@Test(dataProvider = "data")
+	@Test(dataProvider = "data1")
 	public void integrationTest(Map<Object, Object> map) {
 		System.out.println("-------------Test case started ----------------");
 		System.out.println(map.get("User Name"));
@@ -25,10 +25,11 @@ public class DataProviderusingHasmap {
 
 	}
 
-	@DataProvider(name = "data")
+	@DataProvider(name = "data1")
 	public Object[][] dataSupplier() throws IOException {
 
 		File file = new File("C://Users//pc//Desktop//TestData.xlsx");
+		
 		FileInputStream fis = new FileInputStream(file);
 
 		XSSFWorkbook wb = new XSSFWorkbook(fis);

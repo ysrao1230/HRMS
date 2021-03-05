@@ -10,8 +10,9 @@ import com.onpassive.Ostaff.BasePages.Basepage;
 
 public class LoginPage extends Basepage {
 
-	WebDriver driver;
 
+	WebDriver driver;
+	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -31,9 +32,10 @@ public class LoginPage extends Basepage {
 
 	// Login button webelement
 	// @FindBy(xpath="//div[@class='login-button col-sm-12']")
-	// @FindBy(xpath = "//*[text()='Login Here']")
+	 //@FindBy(xpath = "//*[text()='Login Here']")
 	@FindBy(xpath = "//*[@class='login-button w-100 mt-2 mb-3']")
 	WebElement loginbutton;
+
 
 	// invalid success
 	@FindBy(xpath = "//div[@aria-label='UserName Or Password Is Wrong']")
