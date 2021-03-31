@@ -25,6 +25,8 @@ public class ActionsOperations {
 		mouseOverHome.perform();
 		bgColor = td_Home.getCssValue("background-color");
 		System.out.println("After hover: " + bgColor);
+		
+		//closing the bowser
 		driver.close();
 	}
 }
