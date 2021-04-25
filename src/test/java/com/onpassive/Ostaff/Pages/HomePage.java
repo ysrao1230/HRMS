@@ -18,7 +18,7 @@ public class HomePage extends Basepage {
 
 	// Webelement of logout menu
 	@FindBy(xpath = "//i[@class='fa fa-ellipsis-h hdr_right_user_menu_icon']")
-	//@FindBy(xpath = "//i[@class='fa fa-angle-down']")
+	// @FindBy(xpath = "//i[@class='fa fa-angle-down']")
 	WebElement logoutmenu;
 
 	// Webelement of logout
@@ -33,23 +33,22 @@ public class HomePage extends Basepage {
 	@FindBy(xpath = "//p[normalize-space()='HR Operations']")
 	WebElement hroperation;
 
-	// Webelement of time schedule
-	@FindBy(xpath = "//p[normalize-space()='Timing Schedule']")
+	// Webelement of Time schedule
+	@FindBy(xpath = "//a[@id='timing schedule']//div[@class='side-navicon']")
 	WebElement TimeSchedule;
 
-	// Webelement of adding time schedule
-	@FindBy(xpath = "//div[@class='create_new']")
+	// Webelement of Adding Time schedule
+	@FindBy(xpath = "//*[@class='fa fa-plus action_ico']")
 	WebElement addingTimeschedule;
 
 	// Webelement of Location
 	@FindBy(css = "#location > div:nth-child(1) > p")
 	WebElement Location;
 
-	/*
-	 * // Webelement of Company
-	 * 
-	 * @FindBy(xpath = "//p[normalize-space()='Company']") WebElement Company;
-	 */
+	// Webelement of Company
+
+	@FindBy(xpath = "//p[normalize-space()='Company']")
+	WebElement Company;
 
 	// Webelement of Department
 	@FindBy(xpath = "//p[normalize-space()='Department']")
@@ -113,6 +112,7 @@ public class HomePage extends Basepage {
 	public void Hroperationmove() {
 		Actions action = new Actions(driver);
 		action.moveToElement(hroperation).perform();
+
 	}
 
 	public void Hroperationaction() throws Exception {
@@ -121,62 +121,62 @@ public class HomePage extends Basepage {
 	}
 
 	public void TimeSchedule() throws Exception {
-		cli.sidebarscrolling(TimeSchedule);
+		// cli.sidebarscrolling(TimeSchedule);
 		cli.clickAction(TimeSchedule);
 	}
 
 	public void addingtimeScheduling() {
 		addingTimeschedule.click();
-		addingTimeschedule.click();
+
 	}
 
 	public void selectLocation() throws Exception {
-		cli.sidebarscrolling(Location);
+		// cli.sidebarscrolling(Location);
 		cli.clickAction(Location);
 	}
 
-	/*
-	 * public void SelectCompany() throws Exception { cli.sidebarscrolling(Company);
-	 * cli.clickAction(Company); }
-	 */
+	public void SelectCompany() throws Exception {
+		//cli.sidebarscrolling(Company);
+		cli.clickAction(Company);
+	}
 
 	public void SelectDepartment() throws Exception {
-		cli.sidebarscrolling(Department);
+		// cli.sidebarscrolling(Department);
 		cli.clickAction(Department);
 	}
 
 	public void SelectDesignation() throws Exception {
-		cli.sidebarscrolling(Designation);
+		// cli.sidebarscrolling(Designation);
 		cli.clickAction(Designation);
 	}
 
 	public void SelectLeaveplan() throws Exception {
-		cli.sidebarscrolling(LeavePlan);
+		// cli.sidebarscrolling(LeavePlan);
 		cli.clickAction(LeavePlan);
 	}
 
 	public void SelectNotfication() throws Exception {
-		cli.sidebarscrolling(Notification);
+		// cli.sidebarscrolling(Notification);
 		cli.clickAction(Notification);
 	}
 
 	public void SelectProject() throws Exception {
-		cli.sidebarscrolling(Project);
+		// cli.sidebarscrolling(Project);
 		cli.clickAction(Project);
 	}
 
 	public void SelectHolidays() throws Exception {
-		cli.sidebarscrolling(Holidayslist);
+		// cli.sidebarscrolling(Holidayslist);
 		cli.clickAction(Holidayslist);
 	}
 
 	public void SelectJobs() throws Exception {
-		cli.sidebarscrolling(jobs);
+		// cli.sidebarscrolling(jobs);
 		cli.clickAction(jobs);
 	}
 
 	public void SelectSkills() throws Exception {
-		cli.sidebarscrolling(skills);
+		// cli.sidebarscrolling(skills);
 		cli.clickAction(skills);
 	}
 
@@ -186,7 +186,7 @@ public class HomePage extends Basepage {
 	}
 
 	public void SelectAssets() throws Exception {
-		cli.sidebarscrolling(Assets);
+		// cli.sidebarscrolling(Assets);
 		cli.clickAction(Assets);
 	}
 

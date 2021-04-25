@@ -8,10 +8,10 @@ public class Log4jdemo {
 	static Logger logger = LogManager.getLogger(Log4jdemo.class);
 
 	public static void main(String[] args) {
-		logger.info("this is info message");
-		logger.error("this is error message");
-		logger.warn("this is warn message");
-		logger.fatal("this is fatal message");
+		logger.info("This is info message");
+		logger.error("This is error message");
+		logger.warn("This is warn message");
+		logger.fatal("This is fatal message");
 		logger.debug("Testing");
 	}
 

@@ -26,7 +26,11 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
+<<<<<<< HEAD
       <span class="top-banner-font-1">1 suite</span>
+=======
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -61,7 +65,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +97,11 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
+<<<<<<< HEAD
                     <span class="method-stats">3 methods,  3 skipped,  </span>
+=======
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -103,7 +111,30 @@
                     </span>
                     <div class="method-list-content skipped suite-Suite">
                       <span>
+<<<<<<< HEAD
                         <img src="skipped.png" width="3%"/>
+=======
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.onpassive.Ostaff.TestCases.LoginTestcase" class="method navigator-link" hash-for-method="companySearchoption">companySearchoption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.onpassive.Ostaff.TestCases.LoginTestcase" class="method navigator-link" hash-for-method="companyoptionselection">companyoptionselection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
                         <a href="#" panel-name="suite-Suite" title="com.onpassive.Ostaff.TestCases.LoginTestcase" class="method navigator-link" hash-for-method="dashboardOperations">dashboardOperations</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -117,7 +148,16 @@
                         <a href="#" panel-name="suite-Suite" title="com.onpassive.Ostaff.TestCases.LoginTestcase" class="method navigator-link" hash-for-method="logintoApplication">logintoApplication</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+<<<<<<< HEAD
                     </div> <!-- method-list-content skipped suite-Suite -->
+=======
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.onpassive.Ostaff.TestCases.LoginTestcase" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -131,7 +171,86 @@
         <div panel-name="suite-Suite" class="panel Suite">
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
               <img src="skipped.png"/>
+=======
+              <img src="failed.png"/>
+              <span class="class-name">com.onpassive.Ostaff.TestCases.LoginTestcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="companySearchoption">
+                  </a> <!-- companySearchoption -->
+                  <span class="method-name">companySearchoption</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@ng-reflect-name=&apos;searchKey&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;SRINIVASRAO-DSK&apos;, ip: &apos;192.168.2.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86170e605393f730c7104914063baf07
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy27.sendKeys(Unknown Source)
+	at com.onpassive.Ostaff.Pages.Company.searchdata(Company.java:83)
+	at com.onpassive.Ostaff.TestCases.LoginTestcase.companySearchoption(LoginTestcase.java:287)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="companyoptionselection">
+                  </a> <!-- companyoptionselection -->
+                  <span class="method-name">companyoptionselection</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;ng-star-inserted&apos;and text()=&apos;Company&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;SRINIVASRAO-DSK&apos;, ip: &apos;192.168.2.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\pc\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86170e605393f730c7104914063baf07
+*** Element info: {Using=xpath, value=//span[@class=&apos;ng-star-inserted&apos;and text()=&apos;Company&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy27.getText(Unknown Source)
+	at com.onpassive.Ostaff.Pages.Company.getText(Company.java:102)
+	at com.onpassive.Ostaff.TestCases.LoginTestcase.companyoptionselection(LoginTestcase.java:246)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
               <span class="class-name">com.onpassive.Ostaff.TestCases.LoginTestcase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -168,6 +287,13 @@ Session ID: 841a8db8aedcb643cd4543abe42a5aff
 	at com.onpassive.Ostaff.BasePages.Basepage.launchingbrowser(Basepage.java:56)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,7 +344,6 @@ Session ID: 841a8db8aedcb643cd4543abe42a5aff
     &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.onpassive.Ostaff.TestCases.LoginTestcase&quot;/&gt;
-      &lt;class name=&quot;com.onpassive.Ostaff.TestCases.CompanyTestcase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -232,7 +357,7 @@ Session ID: 841a8db8aedcb643cd4543abe42a5aff
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,6 +367,14 @@ Session ID: 841a8db8aedcb643cd4543abe42a5aff
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -258,24 +391,50 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintoApplication')
 data.setCell(0, 2, 'com.onpassive.Ostaff.TestCases.LoginTestcase')
+<<<<<<< HEAD
 data.setCell(0, 3, 0);
+=======
+data.setCell(0, 3, 45455);
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'dashboardOperations')
+data.setCell(1, 1, 'companyoptionselection')
 data.setCell(1, 2, 'com.onpassive.Ostaff.TestCases.LoginTestcase')
+<<<<<<< HEAD
 data.setCell(1, 3, 0);
+=======
+data.setCell(1, 3, 14636);
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
 data.setCell(2, 0, 2)
+<<<<<<< HEAD
 data.setCell(2, 1, 'hrOperationCompany')
 data.setCell(2, 2, 'com.onpassive.Ostaff.TestCases.CompanyTestcase')
 data.setCell(2, 3, 0);
+=======
+data.setCell(2, 1, 'companySearchoption')
+data.setCell(2, 2, 'com.onpassive.Ostaff.TestCases.LoginTestcase')
+data.setCell(2, 3, 10077);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logout')
+data.setCell(3, 2, 'com.onpassive.Ostaff.TestCases.LoginTestcase')
+data.setCell(3, 3, 3259);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'dashboardOperations')
+data.setCell(4, 2, 'com.onpassive.Ostaff.TestCases.LoginTestcase')
+data.setCell(4, 3, 2211);
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 0 ms</span>
+=======
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -296,10 +455,15 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.onpassive.Ostaff.TestCases.LoginTestcase</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">addingnewCompany</span>
+                <br/>
                 <span class="ignored-method-name">hrOperationAsset</span>
                 <br/>
+<<<<<<< HEAD
                 <span class="ignored-method-name">logout</span>
                 <br/>
+=======
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
                 <span class="ignored-method-name">HroperationsTimeschedule</span>
                 <br/>
                 <span class="ignored-method-name">hrOperationProject</span>
@@ -308,7 +472,11 @@ return data;
                 <br/>
                 <span class="ignored-method-name">hrOperationHolidaysList</span>
                 <br/>
+                <span class="ignored-method-name">companyformsubmission</span>
+                <br/>
                 <span class="ignored-method-name">hrOperationDesignation</span>
+                <br/>
+                <span class="ignored-method-name">hrOperationCompany</span>
                 <br/>
                 <span class="ignored-method-name">hrOperationnotification</span>
                 <br/>
@@ -321,15 +489,6 @@ return data;
                 <span class="ignored-method-name">hrOperationLocation</span>
                 <br/>
                 <span class="ignored-method-name">hrOperationpolicy</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.onpassive.Ostaff.TestCases.CompanyTestcase</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">launchingbrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -350,25 +509,49 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">logintoApplication</span>
+<<<<<<< HEAD
                 <span class="method-start">51641 ms</span>
+=======
+                <span class="method-start">26974 ms</span>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dashboardOperations</span>
+<<<<<<< HEAD
                 <span class="method-start">51671 ms</span>
+=======
+                <span class="method-start">72439 ms</span>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.onpassive.Ostaff.TestCases.CompanyTestcase</div> <!-- chronological-class-name -->
               <div class="test-method">
+<<<<<<< HEAD
                 <span class="method-name">hrOperationCompany</span>
                 <span class="method-start">51679 ms</span>
+=======
+                <img src="failed.png">
+                </img>
+                <span class="method-name">companyoptionselection</span>
+                <span class="method-start">74651 ms</span>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.onpassive.Ostaff.TestCases.LoginTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">companySearchoption</span>
+                <span class="method-start">89300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">99384 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
+<<<<<<< HEAD
                 <span class="method-name">tearDown</span>
                 <span class="method-start">51717 ms</span>
+=======
+                <span class="method-name">tearDown(chrome)</span>
+                <span class="method-start">102645 ms</span>
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,7 +6,7 @@
 		<parameter name="Browser" value="chrome" />
 		<classes>
 			<class name="com.onpassive.Ostaff.TestCases.LoginTestcase" />
-			<class name="com.onpassive.Ostaff.TestCases.CompanyTestcase" />
+			<!-- <class name="com.onpassive.Ostaff.TestCases.CompanyTestcase" /> -->
 		</classes>
 	</test>
 	<!-- <test name="Test1"> <parameter name="Browser" value="firefox" /> <classes> 

@@ -20,6 +20,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.onpassive.Ostaff.BasePages.Basepage;
+
 public class CommonLibrary extends Basepage {
 	public void waitForElementVisibility(By locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -80,7 +81,7 @@ public class CommonLibrary extends Basepage {
 		Reporter.log(elementName + "is Displayed -->>", true);
 	}
 
-	public  String captureScreenShots() {
+	public String captureScreenShots() {
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String screenshot = System.getProperty("user.dir") + "/Screenshots/Webinair_" + getCurrentDateTime() + ".png";
 		try {
@@ -93,7 +94,7 @@ public class CommonLibrary extends Basepage {
 		return screenshot;
 	}
 
-	public  String getCurrentDateTime() {
+	public String getCurrentDateTime() {
 		DateFormat customformat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 		Date cdate = new Date();
 		return customformat.format(cdate);
@@ -104,11 +105,15 @@ public class CommonLibrary extends Basepage {
 		je.executeScript("arguments[0].scrollIntoView(true);", elem);
 		return elem;
 	}
-	
+
 	public WebElement clickAction(WebElement element) throws InterruptedException {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click().perform();
 		Thread.sleep(2000);
 		return element;
 	}
+	
+	
+
+	
 }

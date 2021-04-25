@@ -20,14 +20,17 @@ public class MultipleWindowhandles {
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get("https://toolsqa.com/automation-practice-switch-windows/");
-			String parentWindowHandle = driver.getWindowHandle();
-			System.out.println("Parent window's handle -> " + parentWindowHandle);
+			
+			  String parentWindowHandle = driver.getWindowHandle();
+			  System.out.println("Parent window's handle -> " + parentWindowHandle);
+			 
 			WebElement clickElement = driver.findElement(By.xpath("//button[normalize-space()='New Window']"));
 
-			for (int i = 0; i < 3; i++) {
-				clickElement.click();
-				Thread.sleep(3000);
-			}
+			clickElement.click();
+
+			/*
+			 * for (int i = 0; i < 3; i++) { Thread.sleep(3000); }
+			 */
 
 			Set<String> allWindowHandles = driver.getWindowHandles();
 

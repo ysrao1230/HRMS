@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
@@ -22,3 +23,23 @@
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
+        <methods>
+          <include name="companyoptionselection"/>
+          <include name="companySearchoption"/>
+          <include name="tearDown"/>
+          <include name="logintoApplication"/>
+          <include name="launchingbrowser"/>
+        </methods>
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
+>>>>>>> branch 'master' of https://github.com/ysrao1230/HRMS
