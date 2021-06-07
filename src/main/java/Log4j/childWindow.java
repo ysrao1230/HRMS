@@ -13,7 +13,7 @@ import java.util.Set;
 public class childWindow {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = null;
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver1.exe");
 		ChromeOptions options = new ChromeOptions();
 		System.out.println("OPENING BROWSER USING INCOGNITO MODE");
 		options.addArguments("--incognito");
@@ -54,7 +54,7 @@ public class childWindow {
 		driver.switchTo().window(mainWindowHandle);
 		System.out.println(driver.findElement(By.xpath("//div[@class='main-header']")).getText());
 		Thread.sleep(3000);
-		driver.quit();
+		driver.close();
 
 		// Make a collection
 		System.out.println("***********ITERATION OF DATA************");

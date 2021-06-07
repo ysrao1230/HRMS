@@ -30,30 +30,30 @@ public class Basepage implements ConstantValues {
 	protected Company comp;
 
 	@BeforeTest
-	@Parameters("Browser")
-	public void launchingbrowser(String browser) throws Exception {
+	//@Parameters("Browser")
+	public void launchingbrowser() throws Exception {
 		
-		// String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
+		String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
 
-		if (browser.equalsIgnoreCase("chrome")) {
+		if (browser1.equalsIgnoreCase("chrome")) {
 			System.setProperty(CHROME_KEY, CHROME_PATH);
 			driver = new ChromeDriver();
-		} else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (browser1.equalsIgnoreCase("firefox")) {
 
 			System.setProperty(FIREFOX_KEY, FIREFOX_PATH);
 			driver = new FirefoxDriver();
 
-		} else if (browser.equalsIgnoreCase("edge")) {
+		} else if (browser1.equalsIgnoreCase("edge")) {
 			System.setProperty(EDGE_KEY, EDGE_PATH);
 			driver = new EdgeDriver();
 		}
 		
-		logger.info("Initializing the " + browser);
+		logger.info("Initializing the " + browser1);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
-		// driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
-		driver.get(fl.getCellData(LOGIN_EXCEL, "Sheet1", 0, 6));
+		 driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
+		//driver.get(fl.getCellData(LOGIN_EXCEL, "Sheet1", 0, 6));
 		hm = new HomePage(driver);
 		cl = new CommonLibrary();
 		ts = new TimeSchedule(driver);
@@ -61,12 +61,12 @@ public class Basepage implements ConstantValues {
 	}
 
 	@AfterTest
-	@Parameters("Browser")
-	public void tearDown(String browser) throws Exception {
-		// String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
+	//@Parameters("Browser")
+	public void tearDown() throws Exception {
+		 String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
 		Thread.sleep(1000);
 		driver.close();
-		logger.info("Closed the " + browser + " browser");
+		logger.info("Closed the " + browser1 + " browser");
 		System.out.println("THe execution End on or before: " + cl.getCurrentDateTime());
 	}
 }

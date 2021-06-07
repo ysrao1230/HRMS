@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Log4j.SampleCollections">
+      <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
-          <include name="searchProduct"/>
+          <include name="companyoptionselection"/>
+          <include name="companySearchoption"/>
+          <include name="tearDown"/>
+          <include name="logintoApplication"/>
+          <include name="launchingbrowser"/>
         </methods>
-      </class> <!-- Log4j.SampleCollections -->
+      </class> <!-- com.onpassive.Ostaff.TestCases.LoginTestcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
