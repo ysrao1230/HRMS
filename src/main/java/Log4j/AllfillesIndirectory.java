@@ -16,7 +16,7 @@ public class AllfillesIndirectory {
 		
 		int size =Download.length;
 		
-		System.out.println("Number of files in that folder: " +size);
+		System.out.println("Number of files in that folders: " +size);
 
 		Arrays.sort(Download);
 

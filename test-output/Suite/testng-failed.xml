@@ -7,6 +7,7 @@
       <class name="com.onpassive.Ostaff.TestCases.LoginTestcase">
         <methods>
           <include name="companyoptionselection"/>
+          <include name="logout"/>
           <include name="companySearchoption"/>
           <include name="tearDown"/>
           <include name="logintoApplication"/>

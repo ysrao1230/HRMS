@@ -1,15 +1,20 @@
 package com.onpassive.Ostaff.BasePages;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 
 import com.onpassive.Ostaff.Pages.Company;
 import com.onpassive.Ostaff.Pages.HomePage;
@@ -30,9 +35,9 @@ public class Basepage implements ConstantValues {
 	protected Company comp;
 
 	@BeforeTest
-	//@Parameters("Browser")
+	// @Parameters("Browser")
 	public void launchingbrowser() throws Exception {
-		
+
 		String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
 
 		if (browser1.equalsIgnoreCase("chrome")) {
@@ -47,13 +52,13 @@ public class Basepage implements ConstantValues {
 			System.setProperty(EDGE_KEY, EDGE_PATH);
 			driver = new EdgeDriver();
 		}
-		
+
 		logger.info("Initializing the " + browser1);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
-		 driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
-		//driver.get(fl.getCellData(LOGIN_EXCEL, "Sheet1", 0, 6));
+		driver.get(fl.getPropKeyvalue(PROP_PATH, "url"));
+		// driver.get(fl.getCellData(LOGIN_EXCEL, "Sheet1", 0, 6));
 		hm = new HomePage(driver);
 		cl = new CommonLibrary();
 		ts = new TimeSchedule(driver);
@@ -61,12 +66,23 @@ public class Basepage implements ConstantValues {
 	}
 
 	@AfterTest
-	//@Parameters("Browser")
+	// @Parameters("Browser")
 	public void tearDown() throws Exception {
-		 String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
+		String browser1 = fl.getPropKeyvalue(PROP_PATH, "browser");
 		Thread.sleep(1000);
 		driver.close();
 		logger.info("Closed the " + browser1 + " browser");
 		System.out.println("THe execution End on or before: " + cl.getCurrentDateTime());
+	}
+
+	public static void failedTestcase(String methodname) {
+		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(sourceFile, new File("C:\\Users\\pc\\Documents\\"
+					+ "GitHub\\HRMS\\Screenshots\\"+"FailShot_"+methodname+"_"+".JPG"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

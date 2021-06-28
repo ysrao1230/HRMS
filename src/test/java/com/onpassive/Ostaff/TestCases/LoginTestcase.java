@@ -11,13 +11,16 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.onpassive.Ostaff.BasePages.Basepage;
 import com.onpassive.Ostaff.Pages.LoginPage;
+import com.onpassive.Ostaff.Utility.CapturingFailedCases;
 
 import Log4j.Log4jdemo;
 
+@Listeners(CapturingFailedCases.class)
 public class LoginTestcase extends Basepage {
 
 	LoginPage login;
@@ -54,7 +57,7 @@ public class LoginTestcase extends Basepage {
 		String str = cl.getPageTitle();
 		System.out.println("Current Page title is: " + str);
 		// assertEquals("OnPassive HRMS", str);
-		assertEquals("OStaff", str);
+		assertEquals("O-Staff The Next Gen HR Management Software", str);
 		logger.info("Logged in to allpication successfully");
 		Assert.assertFalse(false, "Assert false test message");
 		fl.writeDataToExcel(LOGIN_EXCEL, "Sheet1", 2, 3, "Fail");
@@ -89,7 +92,7 @@ public class LoginTestcase extends Basepage {
 				if (conn.getResponseCode() >= 400) {
 					String strs = url + " - " + conn.getResponseMessage() + "Link is not working";
 					System.out.println(url + " - " + conn.getResponseMessage() + "Link is not working");
-					//listNotWorkingUrls.add(strs);
+					// listNotWorkingUrls.add(strs);
 					// sm.outPut(linkUrl + " - " + httpURLConnect.getResponseMessage() + "Link is
 					// not working");
 				}
@@ -100,7 +103,7 @@ public class LoginTestcase extends Basepage {
 					System.out.println(url + " -- " + str2);
 					// sm.outPut(linkUrl + " - " + httpURLConnect.getResponseMessage());
 
-					//listWorkingUrls.add(str);
+					// listWorkingUrls.add(str);
 
 				}
 
@@ -113,6 +116,7 @@ public class LoginTestcase extends Basepage {
 	public void logout() throws InterruptedException {
 		hm.logoutoption();
 		logger.info("Logged out of the application successfully");
+		Assert.assertEquals(true, false);
 
 	}
 
